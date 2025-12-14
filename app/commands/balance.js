@@ -16,8 +16,8 @@ module.exports = {
 
     const embed = new EmbedBuilder()
       .setColor(0x00bfff)
-      .setTitle(' あなたの残高')
-      .setDescription(現在の残高は **$${balance}** です。\nサーバー内での順位は **${rank}位** です。)
+      .setTitle('現在の残高')
+      .setDescription(現在の残高は **$${balance}** です。\n( **${rank}位** ))
       .setFooter({ text: message.author.username, iconURL: message.author.displayAvatarURL() });
 
     message.reply({ embeds: [embed] });
